@@ -7,15 +7,15 @@
     border-radius: 100%;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
     animation-name: bubble1;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
    animation: 
-    pulse 5s ease infinite alternate, 
-    nudge 3s linear infinite alternate;
+    pulse 3s ease infinite alternate, 
+    nudge 2s linear infinite alternate;
    
 }
 
