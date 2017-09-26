@@ -1,0 +1,54 @@
+.button2 {
+   background-color: grey;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: blue;
+    border-radius: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    animation-name: bubble1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+   animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+   
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(150px, 0);
+  }
+  
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
