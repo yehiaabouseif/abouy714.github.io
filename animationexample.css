@@ -1,0 +1,137 @@
+.clock {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myclock;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.seconds {
+    width: 200px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 98px;
+    left: 0px;
+}
+
+@keyframes myclock {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.button1 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: red;
+    border-radius: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    animation-name: bubble1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+}
+.button2 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: red;
+    border-radius: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    animation-name: bubble2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 3;
+}
+
+@keyframes bubble1 {
+    from {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        color: red;
+    }
+    to {
+        background-color: red;
+        width: 300px;
+        height: 300px;
+        line-height: 300px;
+        color: white;
+    }
+}
+
+p {
+    font-size: 20px;
+    line-height: 20px;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes bubble2 {
+    0% {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        color: red;
+    }
+    50% {
+        background-color: red;
+        width: 300px;
+        height: 300px;
+        line-height: 300px;
+        color: white;
+    }
+    100% {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        color: red;
+    }
+}
+
+p {
+    font-size: 20px;
+    line-height: 20px;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        color: red;
+    }
+    20% {
+        color: orange;
+    }
+    40% {
+        color: purple;
+    }
+    60% {
+        color: blue;
+    }
+    80% {
+        color: lime;
+    }
+    100% {
+        color: red;
+    }
+}
