@@ -1,0 +1,37 @@
+.move-me {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  position: relative;
+  margin: 0 0 10px 0;
+}
+.move-me-1 {
+  animation: move-in-steps 8s steps(4) infinite;
+}
+.move-me-2 {
+  animation: move-in-steps 8s steps(4, start) infinite;
+}
+.move-me-3 {
+  animation: move-in-steps 8s infinite;
+}
+.move-me-4 {
+  animation: move-in-steps 8s steps(4) infinite;
+}
+.move-me-5 {
+  animation: move-in-steps 8s infinite;
+}
+
+body {
+  padding: 20px;
+}
+
+@keyframes move-in-steps {
+  0% {
+    left: 0;
+    background: blue;
+  }
+  100% {
+    left: 100%;
+    background: black;
+  }
+}
