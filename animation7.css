@@ -1,21 +1,16 @@
-#cf2 {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-}
-#cf2 img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#cf2 img.transparent {
-opacity:0;
-}
-#cf_onclick {
-cursor:pointer;
+    .moonn {
+        display: block;
+        width: 250px;
+        height: 250px;
+        background-image: url("moon1.jpg");
+        background-repeat: no-repeat;
+        overflow:hidden;
+        background-size: 250px 250px;
+        text-indent:100%;
+        
+        white-space: nowrap;
+    }
+    .moonn:active {
+        background-image: url("moon2.jpg");
+        
 }
