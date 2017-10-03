@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <title>Responsive</title>
+      <style>
+        body {
+            font-size: 14px;
+        }
+        .colorblock {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        .colorblock:hover {
+            background-color: lime;
+        }
+        .colorblock:active {
+            background-color: #afa; /* pastel green */
+        }
+        
+      @media screen and (max-width: 700px) {
+        body {
+            font-size: 2em; /* a slightly more tablet friendly font size */
+        }
+        .colorblock {
+          background-color: red;
+        }
+        .colorblock:hover {
+            background-color: magenta;
+        }
+        .colorblock:active {
+            background-color: pink;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        body {
+            background-color: #ffc; /* light yellow */
+            font-size: 3em;  /* mobile-friendly! */
+        }
+        .colorblock {
+          background-color: blue;
+        }
+        .colorblock:hover {
+            background-color: #0ff; /* bright blue */
+        }
+      }
+    </style>
+    </head>
+    <body>
+        Hello world.
+        <div class="colorblock"></div>
+    </body>
+</html>
+    
