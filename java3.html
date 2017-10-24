@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Counting Dots</title>
+		<style>
+			body {
+				font-size: 20px;
+			}
+			.dot {
+			    width: 50px;
+			    height: 100px;
+			    background-color: orange;
+			    display: inline-block;
+			    margin: 20px;
+			}
+			.whatever {
+			    background-color: lime;
+			    width: 70px;
+			    height: 70px;
+			    border: 5px solid green;
+			    border-radius: 100%;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<script>
+			/* global $ */
+			
+			// (We will cover loops next week) Use a loop to quickly make 15 dots
+			for (var i = 0; i < 15; i++) {
+				$("body").append("<div class='dot'></div>");
+			}
+			// Fill each dot with a random integer < 50
+		    $(".dot").each(function() {
+			    $(this).html(Math.floor(Math.random()*50)+1);
+			});
+			
+			// Every time you click, add 1 to the count, and toggle the appearance.
+			$(".dot").click(function() {
+			    if($(this).hasClass("whatever")) {
+			        $(this).removeClass("whatever");
+			    } else {
+			        $(this).addClass("whatever");
+			    }
+			    var count = $(this).html();
+			    count++;
+			    $(this).html(count);
+			});
+		</script>
+	</body>
+</html>

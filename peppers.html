@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>changing elements demo</title>
+  <style>
+  div {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    float: left;
+  }
+  .example1, .example2, .example3 {
+     width: 100%; 
+     margin-bottom: 40px;
+  }
+  img {
+    width: 60px;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+ 
+  
+  <div class="example1">
+    <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+      <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>  <div style="background-color:blue;"></div>
+    <div style="background-color:rgb(15,99,30);"></div>
+    <div style="background-color:#123456;"></div>
+    <div style="background-color:#f11;"></div>
+  </div>
+   
+  <div class="example3">
+    <br><br><div style="background-color:blue;"></div> <br>
+    
+  </div>
+   
+  <script>
+  /* global $ */
+  
+  // Example one: disappear boxes on mouseover
+  $( ".example1 div" ).mouseover(function() {
+    $( this ).hide();
+  });
+  
+  
+  // Example three: prepend on click
+  $( ".example3 div" ).click(function() {
+    $( this ).prepend( "<img src='http://www.guitarworld.com/sites/default/files/public/2016/06/BBPOP621.jpg'>" );
+  });
+  </script>
+   
+</body>
+</html>
