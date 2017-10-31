@@ -1,0 +1,99 @@
+.shoe {
+  position: relative;
+  height: 100px;
+}
+
+.shoe .card {
+  position: absolute !important;
+}
+
+.card {
+  background-color: white;
+  position: relative;
+  width: 120px;
+  height: 150px;
+  -moz-border-radius: .3em;
+  -webkit-border-radius: .3em;
+  -khtml-border-radius: .3em;
+  border-radius: .3em;
+  border: 1px solid #C9C9C9;
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  -moz-box-shadow: .2em .2em .2em #C9C9C9;
+  -webkit-box-shadow: .2em .2em .2em #C9C9C9;
+  box-shadow: .2em .2em .2em #C9C9C9;
+}
+
+.card.back {
+  position: relative;
+  background: repeating-linear-gradient(
+    45deg,
+    #e74c3c,
+    #e74c3c 5px,
+    #c0392b 5px,
+    #c0392b 10px
+  );
+}
+
+.card .rank {
+  display: block;
+  width: 20px;
+  line-height: 1;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.card .suit {
+  display: block;
+  width: 20px;
+  line-height: .7;
+  text-align: center;
+}
+
+.card .suit:after {
+  position: absolute;
+  top: 50%;
+  font-size: 2.5em;
+}
+
+.card.Hearts .suit:after {
+  content: "\2665";
+}
+
+.card.Diamonds .suit:after {
+  content: "\2666";
+}
+
+.card.Clubs .suit:after {
+  content: "\2663";
+}
+
+.card.Spades .suit:after {
+  content: "\2660";
+}
+
+.card.Hearts,
+.card.Diamonds {
+  color: red;
+}
+
+.card.back .suit,
+.card.back .rank,
+.card.back .suit:after {
+  visibility: hidden;
+}
+
+.busted,
+.loser {
+  background-color: #e74c3c;
+}
+
+.blackjack,
+.winner {
+  background-color: #2ecc71;
+}
+
+.tied {
+  background-color: #3498db;
+}
