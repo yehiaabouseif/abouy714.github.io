@@ -14,7 +14,6 @@
     spades: new Suit('Spades', 'S', '&spades;')
   };
 
-  // Card object
   var Card = function(value, suit) {
     this.value = value;
     this.suit = suit;

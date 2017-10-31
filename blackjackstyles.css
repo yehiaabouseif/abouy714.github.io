@@ -20,7 +20,7 @@
   padding: 5px;
   margin: 5px;
   display: inline-block;
-  -moz-box-shadow: .2em .2em .2em #C9C9C9;
+  
   -webkit-box-shadow: .2em .2em .2em #C9C9C9;
   box-shadow: .2em .2em .2em #C9C9C9;
 }
