@@ -1,0 +1,73 @@
+
+<html>
+	<head>
+		<title>Preferred Class Time</title>
+		<style>
+			body {
+            color: black;
+            background-color: red;
+            font-size: 20px;
+    }form {
+				font-family: Optima;
+			}
+			label {
+				font-weight: bold;
+				display: inline-block;
+    			margin-bottom: 5px;
+			}
+			p {
+				margin: 0;
+			}
+			input, textarea, select {
+				border: 1px solid #B2DFEE;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1> 
+        <font face = "Times New Roman" size = "" ><p align = "center"> Prefered Class Time</p></font>
+        </h1>
+		<form id="pizza-form">
+		  <p><label id="name">Full Name: <input id="namefield" name="Name"></label></p>
+		  <p><label id="name">Student ID (Nxxxxxx): <input id="namefield" name="NXXXXXX"></label></p>
+		  <p><label>Telephone: <input type="tel" name="phone"></label></p>
+		  <p><label>E-mail address: <input type="email" name="addr" placeholder="@newschool.edu"></label></p>
+		  <p><label>School:
+		      <select name="School">
+		        <option value="">choose school</option>
+		        <option value="small">Parsons School of Design</option>
+		        <option value="medium">Parsons Paris</option>
+		        <option value="large">Eugene Lang College of Liberal Arts</option>
+		        <option value="large">College of Performing Arts</option>
+		        <option value="large">The New School for Social Research</option>
+		        <option value="large">School of Public Engagement</option>
+		      </select>
+		    </label>
+		  </p><p><label>Preferred delivery time:
+		      <input name="due" type="time" min="11:00" max="21:00" step="900">
+		  </label></p>
+		  <p><label>Anything else you would like us to know:<br>
+		      <textarea rows="4" cols="30" name="instructions">Thank you for your input. We will take your opinion into consideration, along with the rest of the student body.</textarea>
+		  </label></p>
+		  <p><button onclick="store()" type="button">Submit</button>
+		  <button onclick="clearData()" type="button">Clear</button></p>
+		</form>
+		<script>
+			/* global $ */
+			/* global localStorage */
+		    function store(){
+    			localStorage.setItem("name", $("#namefield")[0].value);
+    			location.reload(); // refresh the page
+    		}
+    		function clearData() {
+    			localStorage.clear();
+    			location.reload(); // refresh the page
+    		}
+    		if (localStorage.getItem("name")) {
+    			$("#namefield").hide();
+    			$("#name").append(localStorage.getItem("name"));
+    		}
+		</script>
+	</body>
+</html>
