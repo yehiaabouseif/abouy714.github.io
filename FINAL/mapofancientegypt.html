@@ -10,6 +10,26 @@
             font-family: Futura;
             font-size: 20px;
     }
+    
+
+        a.one{
+      zoom: 1; filter: alpha(opacity = 0); /* For IE */
+      opacity: 0.0;
+    }
+        a.one:hover {
+      zoom: 1; filter: alpha(opacity = 100); /* For IE */
+      opacity: 1.0;
+}
+
+        .text1 {
+            position:absolute;
+            height:750px;
+            width:80%;
+            transform: scale(1);
+            top: 270px;
+            left: 660px;
+            
+        }
         .pointer1 {
             position: absolute;
             background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/7859-200.png");
@@ -120,15 +140,27 @@
     }    
         .infomap {
             position:absolute;
-            width:200px;
+            width:250px;
             height:200px;
             transform: scale(1);
             top: 130px;
             left: 600px;
             
-            
+        }
+        
+        .conspiracies {
+            position:absolute;
+            width:250px;
+            height:200px;
+            transform: scale(1);
+            top: 130px;
+            left: 1000px;
             
         }
+        #map {
+        height: 600px;
+        width: 50%;
+       }
         </style>
     </head>
     <body>
@@ -216,7 +248,39 @@
             })
     
           </script>
+          
+    <div class="text1">
+             
+    <h3>Google Maps of the Great Pyramids of Giza</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 29.976480, lng: 31.131302};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtFM8cBvlaMiNFS_offjInJWPDpNahpI8&callback=initMap">
+    </script>
    
+   </div>
+   
+   
+   <div class="conspiracies">
+
+<font size= "30px"> 
+<a class="one" href="https://yehiaabouseif.github.io/FINAL/conspiracies.html"> Conspiracies</em></a>
+ 
+ </font>
+ </div>
+ 
     </body>
 
 </html>
