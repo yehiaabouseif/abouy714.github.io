@@ -5,20 +5,96 @@
        <style>
         body {
             color: black;
-            background-color: lightgreen;
+            background-color: darkred;
             font-family: Baskerville;
-            font-size: 30px;
+            font-size: 20px;
     }
-        </style>
+    
+    .img {
+            position:absolute;
+            width:800px;
+            height:200px;
+            transform: scale(1);
+            top: 30px;
+            left: 350px;
+            
+        }
+        
+        .img2 {
+            position:absolute;
+            width:800px;
+            height:200px;
+            transform: scale(1);
+            top: 380;
+            left: 800px;
+            
+        }
+        .img3 {
+            position:absolute;
+            width:800px;
+            height:200px;
+            transform: scale(1);
+            top: 590;
+            left: 100px;
+            
+        }
+        .container { 
+            width: 90%;
+            margin: auto;
+            
+    }        
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: grey;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
         </head> 
     <body>
-        <h1> 
+        <div class="container">
+          <br>  <h1> 
         <font face = "Futura" size = "" ><p align = "center"> Yehia's Homepage</p></font>
         </h1>
         
-</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">PUCD Creative Computing</button>
+  <div id="myDropdown" class="dropdown-content">
+        
         <p><a href='interview.html'> Interview with Zayd </a></p>
         
         <p><a href='Moonlandings/moonlanding1.html'> The Moonlanding 1 </a></p>
@@ -46,6 +122,58 @@
         <p><a href='thenewschool.html'> Prefered Class Time </a></p>
         <p><a href='FINAL/final.html'> Ancient Egypt </a></p>
 
+  </div>
+  
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+        
+    <div class="img">
+       <a href=https://www.jonathanyeo.com/>
+       <img src="yeo.jpg" alt="Jonathan Yeo" width="900" height="500" border="0"></a>
+        
+    </div>
+    
+     
+    
+     <div class="img2">
+        <a href=http://leejeffries.500px.com/>
+        <img src="jeffries.jpg" alt="Lee Jeffries" width="500" height="500" border="0"></a>
+
+        
+    </div>
+    
+     
+     
+     
+     <div class="img3">
+        <a href=https://carolnelsonfineart.com/>
+                <img src="nelson.jpg" alt="Carol Nelson" width="500" height="500" border="0"></a>
+
+        
+    </div>
+    
+
+        
     </body>
     
 <div id="background-wrap">
@@ -60,5 +188,7 @@
     <div class="bubble x9"></div>
     <div class="bubble x10"></div>
 </div>
+</div>
+
 
 </html> 
